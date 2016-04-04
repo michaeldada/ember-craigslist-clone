@@ -1,0 +1,15 @@
+{{#if editListingForm}}
+<h3>Edit Listing</h3>
+
+<form id="editListing">
+  <p>
+    {{input value=title placeholder=listing.title}}
+    {{textarea value=description placeholder=listing.description}}
+    {{input value=contact placeholder=listing.contact}}
+  </p>
+
+  <button {{action editListing listing}}>Edit Listing</button>
+</form>
+{{else}}
+  <button {{action 'editListingForm'}}>Edit Listing</button>
+{{/if}}

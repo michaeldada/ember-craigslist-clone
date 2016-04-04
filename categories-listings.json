@@ -1,8 +1,11 @@
 {"categories": [{
-    "name": "apts/housing"
+    "name": "apts/housing",
+    "listings": []
     }, {
-    "name": "free"
+    "name": "free",
+    "listings": []
     }, {
-    "name": "missed connections"
+    "name": "missed connections",
+    "listings": []
     }]
 }

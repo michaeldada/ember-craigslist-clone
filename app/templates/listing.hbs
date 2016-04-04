@@ -1,0 +1,13 @@
+<h2>{{model.title}}</h2>
+<h6>Posted: {{model.timestamp}}</h6>
+<p>
+  {{model.description}}
+</p>
+
+{{model.contact}}
+
+<br><br>
+{{#link-to 'category' model.category.id}}Back to {{model.category.name}}{{/link-to}}
+<hr>
+{{edit-listing listing=model editListing="editListing"}}
+<button {{action 'deleteListing' model}}>Delete Listing</button>

@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   actions: {
     newListingForm() {
-      this.set('newListingForm', true)
+      this.set('newListingForm', true);
     },
     newListing() {
       var params = {
