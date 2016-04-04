@@ -1,0 +1,15 @@
+{{#if newListingForm}}
+  <h3>Add Listing</h3>
+
+  <form id="newListingForm">
+    <p>
+      {{input value=title placeholder="Title"}}
+      {{textarea value=description placeholder="Description"}}
+      {{input value=contact placeholder="Contact Info"}}
+    </p>
+
+    <button {{action "newListing"}}>Post!</button>
+  </form>
+{{else}}
+  <button {{action "newListingForm"}}>Add Listing</button>
+{{/if}}

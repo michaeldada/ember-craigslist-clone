@@ -1,0 +1,9 @@
+<h2>{{model.name}}</h2>
+
+<ul>
+  {{#each model.listings as |listing|}}
+    <li>{{listing.title}}</li>
+  {{/each}}
+</ul>
+
+{{new-listing category=model newListing="newListing"}}
